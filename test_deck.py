@@ -12,10 +12,10 @@ def test_shuffle_deck():
 
     shuffeled_deck.shuffle_deck()
 
-    assert deck != shuffeled_deck
+    assert not deck == shuffeled_deck
 
 def test_take_a_card():
     deck = Deck()
     deck.take_a_card(2)
-
-    assert deck == 50
+    deck.take_a_card(1)
+    assert len(deck.__repr__()) == 49

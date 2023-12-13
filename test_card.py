@@ -24,6 +24,7 @@ def test_create_wrong_color():
         card1 = Card('yellow', "Q")
         assert m == "You picked wrong color"
 
+
 def test_card_repr():
     assert repr(Card('hearts', "Queen") == f'Queen - {chr(9827)}')
     assert repr(Card('spades', "King") == f'Queen - {chr(9827)}')
