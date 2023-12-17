@@ -11,6 +11,7 @@ class Deck:
                     Card(color=color, figure=figure)
                 )
 
+
     def __repr__(self):
         return self.deck
 
@@ -20,9 +21,6 @@ class Deck:
     def shuffle_deck(self) -> None:
         shuffle(self.deck)
 
-    def give_a_card(self, number_taken):
-        counter = 0
-        while counter != number_taken:
-            self.deck.pop(-1)
-            counter += 1
-        return self.deck
+    def give_a_card(self):
+        card = self.deck.pop()
+        return card
