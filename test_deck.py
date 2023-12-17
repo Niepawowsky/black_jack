@@ -16,6 +16,6 @@ def test_shuffle_deck():
 
 def test_take_a_card():
     deck = Deck()
-    deck.take_a_card(2)
-    deck.take_a_card(1)
+    deck.give_a_card(2)
+    deck.give_a_card(1)
     assert len(deck.__repr__()) == 49

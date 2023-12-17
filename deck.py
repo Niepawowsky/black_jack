@@ -18,9 +18,9 @@ class Deck:
         not other.deck == self.deck
 
     def shuffle_deck(self) -> None:
-        return shuffle(self.deck)
+        shuffle(self.deck)
 
-    def take_a_card(self, number_taken):
+    def give_a_card(self, number_taken):
         counter = 0
         while counter != number_taken:
             self.deck.pop(-1)

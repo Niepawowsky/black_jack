@@ -13,7 +13,7 @@ class Card:
                       "spades": chr(9824)}
 
     possible_figure = (list(range(2, 11))
-                       + ['Jack', 'Queen', 'King', 'Ace'])  # 'Jack', 'Queen', 'King', 'Ace'
+                       + ['Jack', 'Queen', 'King', 'Ace'])
 
     def __init__(self, color, figure):
         if color not in self.possible_color:
