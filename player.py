@@ -1,4 +1,5 @@
 from card import Card
+from black_jack import GameOverException, GameOverUserException, GameOverCroupierException
 
 
 class Player:
@@ -26,5 +27,8 @@ class Player:
                 points += 10
             else:
                 points += card.figure
+
+        if points > 21:
+            raise GameOverException(f"You lose, your points are over 21")
 
         return points

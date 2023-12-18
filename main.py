@@ -1,8 +1,14 @@
 from black_jack import Game
+from exceptions import GameOverCroupierException,GameOverUserException
 
+try:
+    game = Game()
+    game.play()
+except GameOverCroupierException:
+    print("Player wins!")
+except GameOverUserException:
+    print("Croupier wins! ")
 
-game = Game()
-game.play()
-
+#
 # if __name__ == '__main__':
-#     pass
+# #     pass

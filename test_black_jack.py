@@ -5,7 +5,6 @@ def test_cards_on_player_hand():
     cards = game.play()
 
 
-
     assert len(cards) == 2
 
 
