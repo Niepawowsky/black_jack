@@ -6,3 +6,7 @@ class GameOverUserException(Exception):
 
 class GameOverCroupierException(Exception):
     pass
+
+class GameOverDrawException(Exception):
+    pass
+

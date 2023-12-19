@@ -1,6 +1,6 @@
 import pytest
 
-from card import Card, InvalidCardColor, InvalidCardFigure
+from game.card import Card, InvalidCardColor, InvalidCardFigure
 
 
 def test_card_creator():

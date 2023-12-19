@@ -1,4 +1,4 @@
-from card import Card
+from game.card import Card
 from random import shuffle
 
 

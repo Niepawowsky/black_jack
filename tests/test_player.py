@@ -1,6 +1,5 @@
-from player import Player
-from card import Card
-from deck import Deck
+from game.player import Player
+from game.card import Card
 
 
 def test_calculate_player_points():

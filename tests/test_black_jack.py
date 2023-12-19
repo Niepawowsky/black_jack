@@ -1,4 +1,4 @@
-from black_jack import Game
+from game.black_jack import Game
 
 def test_cards_on_player_hand():
     game = Game()

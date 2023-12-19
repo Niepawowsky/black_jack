@@ -1,5 +1,5 @@
-from deck import Deck
-from card import Card
+from game.deck import Deck
+
 
 def test_deck_cards_amount():
     deck = Deck()

@@ -1,11 +1,14 @@
-from card import Card
-from black_jack import GameOverException, GameOverUserException, GameOverCroupierException
+from game.card import Card
+from tests.exceptions import GameOverException, GameOverDrawException
 
 
 class Player:
     def __init__(self):
         self.cards = []
-        # self.score = 0
+        self.score = 0
+
+    def __eq__(self, other):
+        return self.score == other.score
 
     def take_card(self, card:Card):
         self.cards.append(card)
@@ -29,6 +32,7 @@ class Player:
                 points += card.figure
 
         if points > 21:
-            raise GameOverException(f"You lose, your points are over 21")
+            raise GameOverException
+
 
         return points
